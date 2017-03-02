@@ -13,12 +13,12 @@ var promptSchema = {
 		productUrl: {
 			description: 'product url',
 			required: true,
-		    default: 'http://www.supremenewyork.com/shop/shirts/uqgunp9tk/i4hujaw3x'
+			default: 'http://www.supremenewyork.com/shop/shirts/uqgunp9tk/i4hujaw3x'
 		},
 		size: {
 			description: 'size if applicable (case sensitive)',
 			required: false,
-		    default: 'Large'
+			default: 'Large'
 		}
 	}
 };
@@ -45,14 +45,14 @@ prompt.getAsync(promptSchema)
 		if (promptResult.size) {
 			browser.select('select', promptResult.size)
 		}
-        browser.document.getElementById("cart-addf").submit();
+		browser.document.getElementById("cart-addf").submit();
 		
 		setTimeout(() => {
-        	if (browser.getCookie('cart').includes('1+item--')) {
-	        	resolve()
-        	} else {
-        		reject('failed to add to cart')
-        	}
+			if (browser.getCookie('cart').includes('1+item--')) {
+				resolve()
+			} else {
+				reject('failed to add to cart')
+			}
 		}, 500)
 	})
 }).then(() => {
