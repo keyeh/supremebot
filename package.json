@@ -1,0 +1,27 @@
+{
+  "name": "fuccboi-supreme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keyeh/fuccboi-supreme.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/keyeh/fuccboi-supreme/issues"
+  },
+  "homepage": "https://github.com/keyeh/fuccboi-supreme#readme",
+  "dependencies": {
+    "jsonfile": "^2.4.0",
+    "node-promisify": "^1.2.0",
+    "pretty-print": "^1.1.0",
+    "prompt": "^1.0.0",
+    "zombie": "^5.0.5"
+  }
+}
