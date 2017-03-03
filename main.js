@@ -80,7 +80,7 @@ prompt.getAsync(promptSchema)
 	browser.select('#credit_card_month', userConfig.exp_mo)
 	browser.select('#credit_card_year', userConfig.exp_yr)
 	browser.fill('#vval', userConfig.cvv);
-	
+	browser.document.getElementById("store_address").checked = true;
 	browser.document.getElementById("checkout_form").submit();
 	console.log('submitted checkout form');
 
