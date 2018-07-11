@@ -1,2 +1,2 @@
-# fuccboi-supreme
+# supremebot
 Supreme purchasing bot
